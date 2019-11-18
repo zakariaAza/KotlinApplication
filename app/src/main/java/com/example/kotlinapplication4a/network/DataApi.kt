@@ -4,11 +4,11 @@ import com.example.kotlinapplication4a.model.Data
 import io.reactivex.Observable
 import retrofit2.http.GET
 
-interface PostApi {
+interface DataApi {
     /**
-     * Get the list of the pots from the API
+     * Get the list from the API
      */
-    @GET("/posts")
+    @GET("/data")
     fun getPosts(): Observable<List<Data>>
 
 }

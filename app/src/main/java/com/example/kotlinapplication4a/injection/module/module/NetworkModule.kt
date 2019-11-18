@@ -1,4 +1,4 @@
-import com.example.kotlinapplication4a.network.PostApi
+import com.example.kotlinapplication4a.network.DataApi
 import com.example.kotlinapplication4a.utils.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -23,8 +23,8 @@ object NetworkModule {
     @Provides
     @Reusable
     @JvmStatic
-    internal fun providePostApi(retrofit: Retrofit): PostApi {
-        return retrofit.create(PostApi::class.java)
+    internal fun providePostApi(retrofit: Retrofit): DataApi {
+        return retrofit.create(DataApi::class.java)
     }
 
     /**
