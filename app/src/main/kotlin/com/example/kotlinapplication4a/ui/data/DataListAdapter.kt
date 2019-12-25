@@ -1,7 +1,7 @@
 package com.example.kotlinapplication4a.ui.data
 
-import android.databinding.DataBindingUtil
-import android.support.v7.widget.RecyclerView
+import androidx.databinding.DataBindingUtil
+import androidx.recyclerview.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import com.example.kotlinapplication4a.model.Data
@@ -29,7 +29,7 @@ class DataListAdapter: RecyclerView.Adapter<DataListAdapter.ViewHolder>() {
         notifyDataSetChanged()
     }
 
-    class ViewHolder(private val binding: ItemDataBinding):RecyclerView.ViewHolder(binding.root){
+    class ViewHolder(private val binding: ItemDataBinding): RecyclerView.ViewHolder(binding.root){
         private val viewModel = DataViewModel()
 
         fun bind(data: Data){

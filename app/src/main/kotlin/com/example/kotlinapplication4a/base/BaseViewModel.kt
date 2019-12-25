@@ -1,6 +1,6 @@
 package com.example.kotlinapplication4a.base
 
-import android.arch.lifecycle.ViewModel
+import androidx.lifecycle.ViewModel
 import com.example.kotlinapplication4a.injection.component.DaggerViewModelInjector
 import com.example.kotlinapplication4a.injection.component.ViewModelInjector
 import com.example.kotlinapplication4a.injection.module.NetworkModule

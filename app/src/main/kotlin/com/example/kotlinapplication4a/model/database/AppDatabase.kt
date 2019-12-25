@@ -1,7 +1,7 @@
 package com.example.kotlinapplication4a.model.database
 
-import android.arch.persistence.room.Database
-import android.arch.persistence.room.RoomDatabase
+import androidx.room.Database
+import androidx.room.RoomDatabase
 import com.example.kotlinapplication4a.model.Data
 import com.example.kotlinapplication4a.model.DataDao
 

@@ -1,6 +1,6 @@
 package com.example.kotlinapplication4a.ui.data
 
-import android.arch.lifecycle.MutableLiveData
+import androidx.lifecycle.MutableLiveData
 import com.example.kotlinapplication4a.base.BaseViewModel
 import com.example.kotlinapplication4a.model.Data
 
