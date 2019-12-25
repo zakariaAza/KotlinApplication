@@ -34,6 +34,15 @@ class DataListViewModel(private val dataDao: DataDao): BaseViewModel(){
     }
 
     private fun loadDatas(){
+        subscription = dataApi.getDatas()
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(
+                        { result -> onRetrieveDataListSuccess(result) },
+                        { onRetrieveDataListError() }
+                )
+
+        return
         subscription = Observable.fromCallable { dataDao.all }
                 .concatMap {
                     dbDataList ->

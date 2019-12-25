@@ -6,18 +6,19 @@ import com.example.kotlinapplication4a.model.Data
 
 class DataViewModel: BaseViewModel() {
     private val dataName = MutableLiveData<String>()
-    private val dataWebPages = MutableLiveData<String>()
+    private val dataId= MutableLiveData<String>()
+
 
     fun bind(data: Data){
         dataName.value = data.name
-        dataWebPages.value = data.web_pages
+        dataId.value = data.id
     }
 
     fun getDataTitle():MutableLiveData<String>{
         return dataName
     }
 
-    fun getDataBody():MutableLiveData<String>{
-        return dataWebPages
+    fun getDataId():MutableLiveData<String>{
+        return dataId
     }
 }

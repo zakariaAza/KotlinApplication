@@ -11,6 +11,6 @@ interface DataApi {
     /**
      * Get the list of universities from the API
      */
-    @GET("/search?country=france")
+    @GET("/v1/coins")
     fun getDatas(): Observable<List<Data>>
 }
