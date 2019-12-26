@@ -1,6 +1,7 @@
 <resources>
-    <string name="app_name">MVVMDatas</string>
+    <string name="app_name">Pics Break</string>
 
     <string name="retry">Retry</string>
     <string name="data_error">An error occurred while loading the datas</string>
+    <string name="search">Search</string>
 </resources>

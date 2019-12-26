@@ -9,8 +9,8 @@ import retrofit2.http.GET
  */
 interface DataApi {
     /**
-     * Get the list of universities from the API
+     * Get the list of cryptocurrencies from the API
      */
-    @GET("/v1/coins")
+    @GET("/v2/list")
     fun getDatas(): Observable<List<Data>>
 }

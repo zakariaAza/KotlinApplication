@@ -3,22 +3,35 @@ package com.example.kotlinapplication4a.ui.data
 import androidx.lifecycle.MutableLiveData
 import com.example.kotlinapplication4a.base.BaseViewModel
 import com.example.kotlinapplication4a.model.Data
+import android.graphics.BitmapFactory
+import android.graphics.Bitmap
+import java.io.IOException
+import java.net.HttpURLConnection
+import android.R.attr.bitmap
+import android.graphics.drawable.BitmapDrawable
+import android.graphics.drawable.Drawable
+
+
+
 
 class DataViewModel: BaseViewModel() {
-    private val dataName = MutableLiveData<String>()
-    private val dataId= MutableLiveData<String>()
+    private val dataAuthor = MutableLiveData<String>()
+    private val dataUrlImage= MutableLiveData<String>()
+
 
 
     fun bind(data: Data){
-        dataName.value = data.name
-        dataId.value = data.id
+        dataAuthor.value = data.author
+        dataUrlImage.value = data.download_url
     }
 
-    fun getDataTitle():MutableLiveData<String>{
-        return dataName
+    fun getDataAuthor():MutableLiveData<String>{
+        return dataAuthor
     }
 
-    fun getDataId():MutableLiveData<String>{
-        return dataId
+    fun getDataImage():MutableLiveData<String> {
+
+        return dataUrlImage
     }
+
 }

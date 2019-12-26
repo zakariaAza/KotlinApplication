@@ -9,7 +9,11 @@ import androidx.room.PrimaryKey
 @Entity
 data class Data(
         val id: String,
+        val author: String,
+        val width: String,
+        val height: String,
         @field:PrimaryKey
-        val name: String,
-        val symbol: String
+        val download_url: String
+
+
 )
